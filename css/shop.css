@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.row {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-left: 10%;
+}
+
+.column {
+  float: right;
+  margin: 0 2%;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.card {
+  max-height: 350px;
+  margin:auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: white;
+  font-size: 18px;
+}
+
+.card p, .card h4 {
+  margin: 10px;
+}
+
+.card h4 {
+  color: black;
+}
+
+.card button, .posttext {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 60%;
+  font-size: 18px;
+  border-radius: 20px;
+
+  overflow:hidden;
+  transition:transform 0.1s;
+  z-index:1;
+}
+
+.card button:hover {
+  opacity: 0.7;
+  transform:scale(1.1);
+}
+
+.done{
+  background:#be2edd;
+  position:absolute;
+  width:100%;
+  top:0;
+  left:0;
+  transition:transform 0.3s ease;
+
+  transform:translate(-110%) skew(-40deg);
+}
+
+.posttext{
+  background:#be2edd;
+}
+
+img {
+  width: 235px;
+  height: 200px;
+}
